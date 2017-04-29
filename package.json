@@ -1,0 +1,28 @@
+{
+  "name": "mocha-rspecstyle",
+  "version": "1.0.0",
+  "description": "Syntax on mocha like rspec framework",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/mugi-uno/mocha-rspecstyle.git",
+  "author": "mugi-uno <mugi.uno@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "mocha",
+    "rspec",
+    "subject",
+    "let"
+  ], 
+  "scripts": {
+    "test": "npm run build && node_modules/.bin/mocha test/**/*.js --require ./test/helper.js",
+    "build": "node_modules/.bin/webpack -p"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-latest": "^6.24.1",
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^3.3.0",
+    "power-assert": "^1.4.2",
+    "webpack": "^2.4.1"
+  }
+}
