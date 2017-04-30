@@ -1,3 +1,5 @@
+import { subject, val } from '../../lib/';
+
 describe('hooks', () => {
   subject(() => val('value1'));
 
