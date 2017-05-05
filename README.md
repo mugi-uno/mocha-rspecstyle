@@ -8,11 +8,14 @@ mocha-rspecstyle provides `subject` and `val` hooks on mocha like rspec.
 Usage
 -------
 
+```
+mocha --ui rspecstyle
+```
+
 ### `subject`
 
 ```js
 const assert = require('assert');
-const { subject } = require('mocha-rspecstyle');
 
 describe('subject sample', () => {
   subject(() => ({ foo: 'abc', bar: 123 }));
@@ -37,7 +40,6 @@ describe('subject sample', () => {
 
 ```js
 const assert = require('assert');
-const { val } = require('mocha-rspecstyle');
 
 describe('val sample', () => {
   val('foo', () => ({ foo: 'commonValue', bar: val('bar')}));

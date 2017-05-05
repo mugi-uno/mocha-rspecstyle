@@ -1,0 +1,4 @@
+--require index.js
+--require test/helper.js
+--ui rspecstyle
+--recursive
