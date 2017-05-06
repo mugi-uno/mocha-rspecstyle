@@ -20,14 +20,14 @@ describe('hooks', () => {
   context('override subject hook', () => {
     context('callback function', () => {
       subject('new subject');
-      it ('use override value', () => {
+      it('use override value', () => {
         assert(subject() === 'new subject');
       });
     });
 
     context('not callback function', () => {
       subject(() => 'new subject callback value');
-      it ('use override value', () => {
+      it('use override value', () => {
         assert(subject() === 'new subject callback value');
       });
     });
@@ -39,7 +39,7 @@ describe('hooks', () => {
         numberValue: 100,
         stringValue: 'abc'
       }));
-      it ('use override value', () => {
+      it('use override value', () => {
         assert.deepEqual(subject(), {
           numberValue: 100,
           stringValue: 'abc'
@@ -52,7 +52,7 @@ describe('hooks', () => {
         numberValue: 200,
         stringValue: 'def'
       });
-      it ('use override value', () => {
+      it('use override value', () => {
         assert.deepEqual(subject(), {
           numberValue: 200,
           stringValue: 'def'
@@ -66,7 +66,7 @@ describe('hooks', () => {
       val('value2', () => ({
         value3: '789'
       }));
-      it ('use override value', () => {
+      it('use override value', () => {
         assert.deepEqual(subject(), {
           commonValue: '123',
           value2: {
@@ -80,7 +80,7 @@ describe('hooks', () => {
       val('value2', ({
         value4: '1000'
       }));
-      it ('use override value', () => {
+      it('use override value', () => {
         assert.deepEqual(subject(), {
           commonValue: '123',
           value2: {
