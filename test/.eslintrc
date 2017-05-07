@@ -17,6 +17,8 @@
     "xit": false,
     "xspecify": false,
     "subject": false,
-    "val": false
+    "val": false,
+    "sharedExamples": false,
+    "itBehavesLike": false
   }
 }
