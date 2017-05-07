@@ -1,6 +1,6 @@
 {
   "name": "mocha-rspecstyle",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Syntax on mocha like rspec framework",
   "main": "index.js",
   "repository": "ssh://git@github.com/mugi-uno/mocha-rspecstyle.git",
