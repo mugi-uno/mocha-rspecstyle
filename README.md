@@ -9,7 +9,7 @@ Usage
 -------
 
 ```
-mocha --ui rspecstyle
+mocha --require mocha-rspecstyle --ui rspecstyle
 ```
 
 ### `subject`
